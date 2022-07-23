@@ -2,22 +2,13 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>Inflow.Modules.Customers.Api</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Inflow.Modules.Customers.ApiHandsOn</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Inflow.Modules.Customers.Core\Inflow.Modules.Customers.Core.csproj" />
+      <ProjectReference Include="..\Inflow.Modules.Customers.CoreHandsOn\Inflow.Modules.Customers.CoreHandsOn.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <None Remove="module.customers.json" />
-        <Content Include="module.customers.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-        <None Remove="module.customers.development.json" />
-        <Content Include="module.customers.development.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
-    
 </Project>
